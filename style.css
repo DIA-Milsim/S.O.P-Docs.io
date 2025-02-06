@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Sidebar */
+aside#sidebar {
+    width: 250px;
+    background: #222;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+aside h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+aside ul li {
+    margin: 10px 0;
+}
+
+aside ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+aside ul li a:hover {
+    background: #444;
+}
+
+/* Dark Mode Button */
+#dark-mode-toggle {
+    margin-top: auto;
+    background: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#dark-mode-toggle:hover {
+    background: #666;
+}
+
+/* Content Area */
+main#content-area {
+    margin-left: 270px;
+    padding: 20px;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode main {
+    background: #2a2a2a;
+    color: #ddd;
+}
+
+body.dark-mode aside {
+    background: #111;
+}
+
+body.dark-mode aside ul li a:hover {
+    background: #333;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: #777;
+}
